@@ -13,12 +13,8 @@ func main() {
 	for loop {
 		idx += 1
 		fmt.Println("==== test-watchdog.watchdog-no-notify running. idx:", idx)
-		if idx == 3 {
-			//sdnotify.SdNotify("WATCHDOG=1")
+		if idx%3 ==0 {
 			fmt.Println("==== test-daemon NOT notified on watchdog")
-		}
-		if idx == 10 {
-			break
 		}
 		time.Sleep(1 * time.Second)
 	}

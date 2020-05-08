@@ -13,12 +13,9 @@ func main() {
 	for loop {
 		idx += 1
 		fmt.Println("==== test-watchdog.watchdog-notify running. idx:", idx)
-		if idx == 3 {
+		if idx%3 == 0 {
 			sdnotify.SdNotify("WATCHDOG=1")
 			fmt.Println("==== test-watchdog.watchdog-notify IS notified on watchdog")
-		}
-		if idx == 10 {
-			break
 		}
 		time.Sleep(1 * time.Second)
 	}
