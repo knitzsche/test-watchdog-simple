@@ -24,7 +24,7 @@ apps:
     watchdog-timeout: 6s
     # if daemon does not notify systemd every six secs, systemd restarts it
     # this daemon does notify so it is not restarted by the systemd watchdog
-    # but as a simple daemon it is then restarted after it compeltes
+    # but as a simple daemon it is then restarted after it completes
 
 parts:
   daemon:
