@@ -3,8 +3,6 @@ package main
 import (
 	"fmt"
 	"time"
-
-	"github.com/okzk/sdnotify"
 )
 
 func main() {
@@ -18,5 +16,4 @@ func main() {
 		}
 		time.Sleep(1 * time.Second)
 	}
-		sdnotify.SdNotify("notifying")
 }
